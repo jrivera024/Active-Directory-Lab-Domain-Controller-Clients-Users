@@ -54,7 +54,7 @@ This lab builds on the previous setup by:
   - Create new OU _CLIENTS and move Client-1 into it.
 
     <img width="485" height="304" alt="image" src="https://github.com/user-attachments/assets/45cd9b0b-473e-4c78-8546-ea522047d181" />
-
+---
 
 ## Part 2: Remote Desktop & Bulk User Creation
 
@@ -64,14 +64,28 @@ This lab builds on the previous setup by:
   - Open System Properties → Remote Desktop.
   - Allow Domain Users access.
     -  Now, normal users can RDP into Client-1.
-      
+
+      <img width="378" height="329" alt="image" src="https://github.com/user-attachments/assets/1d5c6e87-7a2d-4d68-934b-8dd2d79b4c51" />
+
 5. Bulk Create Users with PowerShell
   - On DC-1, log in as jane_admin.
   - Open PowerShell ISE as Administrator.
   - Paste the following script into a new file:
+
+    ![image](https://github.com/user-attachments/assets/5f72befa-a87c-41db-bc5a-22372c2a516d)
+
   - Run the script → accounts will be created under _EMPLOYEES OU.
+
+    <img width="947" height="300" alt="image" src="https://github.com/user-attachments/assets/aaf06458-f0d4-41fe-b3c4-e23b244ff1a2" />
+
   - Open ADUC to verify new users exist.
+
+    <img width="746" height="526" alt="image" src="https://github.com/user-attachments/assets/6688a8c1-6e25-48b4-bc10-02e5d5a996fa" />
+
   - Attempt to log into Client-1 with one of the new users:
-    - Example: mydomain.com\alice.smith
-    - Password: Password123!
+    - Example: mydomain.com\bax.beq
+    - Password: Password1
+
+      <img width="801" height="627" alt="image" src="https://github.com/user-attachments/assets/dd6ad13f-b9e9-4835-9c21-7369c532d98c" />
+
 6. 
